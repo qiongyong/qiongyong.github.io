@@ -6,17 +6,33 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//litten.me">
-  <title>Archives | 勇的技术博客</title>
+  <title>AutoLayout小例子 | 勇的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="暂时不可描述">
-<meta property="og:type" content="website">
-<meta property="og:title" content="勇的技术博客">
-<meta property="og:url" content="//litten.me/archives/index.html">
+  <meta name="description" content="约束快捷键
+AutoLayout详细理解
+
+经典例子(屏幕上两个等高view)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AutoLayout小例子">
+<meta property="og:url" content="//litten.me/2015/11/10/hello-world/index.html">
 <meta property="og:site_name" content="勇的技术博客">
-<meta property="og:description" content="暂时不可描述">
+<meta property="og:description" content="约束快捷键
+AutoLayout详细理解
+
+经典例子(屏幕上两个等高view)">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1392542-d64a1ac18089838e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1392542-6c9ac7738b70103e.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1392542-e372afd3bcb4ed0f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1392542-644c5b6685f106b8.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1392542-d71d3f4585935bae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-03-08T11:12:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="勇的技术博客">
-<meta name="twitter:description" content="暂时不可描述">
+<meta name="twitter:title" content="AutoLayout小例子">
+<meta name="twitter:description" content="约束快捷键
+AutoLayout详细理解
+
+经典例子(屏幕上两个等高view)">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1392542-d64a1ac18089838e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
   
     <link rel="alternative" href="/atom.xml" title="勇的技术博客" type="application/atom+xml">
   
@@ -134,36 +150,54 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/11/10/hello-world/" class="archive-article-date">
-  	<time datetime="2015-11-10T12:10:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-11-10</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/11/10/hello-world/">AutoLayout小例子</a>
+    <h1 class="article-title" itemprop="name">
+      AutoLayout小例子
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2015/11/10/hello-world/" class="archive-article-date">
+  	<time datetime="2015-11-10T12:10:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-11-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><a href="http://www.jianshu.com/p/13a9d41de999" target="_blank" rel="external">约束快捷键</a></li>
+<li><a href="http://blog.csdn.net/pucker/article/details/41843511" target="_blank" rel="external">AutoLayout详细理解</a></li>
+</ul>
+<h1 id="经典例子-屏幕上两个等高view"><a href="#经典例子-屏幕上两个等高view" class="headerlink" title="经典例子(屏幕上两个等高view)"></a>经典例子(屏幕上两个等高view)</h1><p><img src="http://upload-images.jianshu.io/upload_images/1392542-d64a1ac18089838e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="等高view效果图"><br><a id="more"></a><br><img src="http://upload-images.jianshu.io/upload_images/1392542-6c9ac7738b70103e.gif?imageMogr2/auto-orient/strip" alt="equalHeight.gif"></p>
+<h1 id="按钮平分-其实平分我们只要在一个容器里面一次性全部给足上下左右的距离然后让它们等高等宽即可"><a href="#按钮平分-其实平分我们只要在一个容器里面一次性全部给足上下左右的距离然后让它们等高等宽即可" class="headerlink" title="按钮平分(其实平分我们只要在一个容器里面一次性全部给足上下左右的距离然后让它们等高等宽即可)"></a>按钮平分(其实平分我们只要在一个容器里面一次性全部给足上下左右的距离然后让它们等高等宽即可)</h1><p><img src="http://upload-images.jianshu.io/upload_images/1392542-e372afd3bcb4ed0f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="按钮平分"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1392542-644c5b6685f106b8.gif?imageMogr2/auto-orient/strip" alt="button.gif"></p>
+<h1 id="给ScrollView添加约束"><a href="#给ScrollView添加约束" class="headerlink" title="给ScrollView添加约束"></a>给ScrollView添加约束</h1><ul>
+<li><p>下面的结构上面是一个UIImageView下面是一个UIScrollView里面嵌套了两个UILabel,一个名称,一个描述</p>
+<ul>
+<li><p>注意点:给UIImageView添加约束的时候让它跟控制器的View等高再编辑约束改为0.5就能与屏幕等高了</p>
+</li>
+<li><p>描述Label的行数要改为0,否则不会换行</p>
+</li>
+<li><p>约束好之后要给UIScrollView和两个Label添加上与UIImageView等宽的约束.否则它是向左右滚动而不是上下滚动,效果就不是我们预想的了</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/1392542-d71d3f4585935bae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ScrollView"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -179,7 +213,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -192,66 +226,104 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://litten.me/2015/11/10/hello-world/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/04/08/UIView分类/" class="archive-article-date">
-  	<time datetime="2015-04-08T10:51:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-04-08</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/04/08/UIView分类/">浮动显示分类</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">UIView分类</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/iOS开发/" class="article-tag-list-link color1">iOS开发</a>
-        		</li>
-      		
-		</ul>
-	</div>
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2015/04/08/UIView分类/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">浮动显示分类</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
+
+
+
   
-  
-    </div></section>
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="hello-world" data-title="AutoLayout小例子" data-url="//litten.me/2015/11/10/hello-world/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"qiongyong"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
 
-    
+
 
 
           </div>
@@ -274,8 +346,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
