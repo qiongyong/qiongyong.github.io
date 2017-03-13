@@ -6,17 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//litten.me">
-  <title>Archives: 2015/11 | 勇的技术博客</title>
+  <title>iOS判断版本号 | 勇的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="暂时不可描述">
-<meta property="og:type" content="website">
-<meta property="og:title" content="勇的技术博客">
-<meta property="og:url" content="//litten.me/archives/2015/11/index.html">
+  <meta name="description" content="iOS中判断当前版本是否是第一次进入
+
+OC版本12345678910111213141516171819202122/** 判断是否是新版本 @return 返回1是新版本 0不是新版本 */- (BOOL) isNewVersion &amp;#123;        //获取info里的version,取到的总是当前的版本号    NSString *currentVersion = [NSBun">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS判断版本号">
+<meta property="og:url" content="//litten.me/2015/06/13/iOS判断版本号/index.html">
 <meta property="og:site_name" content="勇的技术博客">
-<meta property="og:description" content="暂时不可描述">
+<meta property="og:description" content="iOS中判断当前版本是否是第一次进入
+
+OC版本12345678910111213141516171819202122/** 判断是否是新版本 @return 返回1是新版本 0不是新版本 */- (BOOL) isNewVersion &amp;#123;        //获取info里的version,取到的总是当前的版本号    NSString *currentVersion = [NSBun">
+<meta property="og:updated_time" content="2017-03-13T09:18:08.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="勇的技术博客">
-<meta name="twitter:description" content="暂时不可描述">
+<meta name="twitter:title" content="iOS判断版本号">
+<meta name="twitter:description" content="iOS中判断当前版本是否是第一次进入
+
+OC版本12345678910111213141516171819202122/** 判断是否是新版本 @return 返回1是新版本 0不是新版本 */- (BOOL) isNewVersion &amp;#123;        //获取info里的version,取到的总是当前的版本号    NSString *currentVersion = [NSBun">
   
     <link rel="alternative" href="/atom.xml" title="勇的技术博客" type="application/atom+xml">
   
@@ -134,52 +141,40 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-iOS判断版本号" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/11/10/hello-world/" class="archive-article-date">
-  	<time datetime="2015-11-10T12:10:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-11-10</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/11/10/hello-world/">AutoLayout小例子</a>
+    <h1 class="article-title" itemprop="name">
+      iOS判断版本号
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">AutoLayout</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">自动布局</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        <a href="/2015/06/13/iOS判断版本号/" class="archive-article-date">
+  	<time datetime="2015-06-13T09:14:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-06-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>iOS中判断当前版本是否是第一次进入</li>
+</ul>
+<h1 id="OC版本"><a href="#OC版本" class="headerlink" title="OC版本"></a>OC版本</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> 判断是否是新版本</div><div class="line"></div><div class="line"> @return 返回1是新版本 0不是新版本</div><div class="line"> */</div><div class="line">- (BOOL) isNewVersion &#123;</div><div class="line">    </div><div class="line">    //获取info里的version,取到的总是当前的版本号</div><div class="line">    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[@&quot;CFBundleShortVersionString&quot;];</div><div class="line">    </div><div class="line">    //获取到之前的版本</div><div class="line">    NSString *sandboxVersionKey = @&quot;sandboxVersionKey&quot;;</div><div class="line">    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];</div><div class="line">    NSString *sandboxVersion = [userDefaults objectForKey:sandboxVersionKey];</div><div class="line">    </div><div class="line">    //保存当前版本号</div><div class="line">    [userDefaults setValue:currentVersion forKey:sandboxVersionKey];</div><div class="line">    [userDefaults synchronize];</div><div class="line">    </div><div class="line">    // 当前版本和沙盒版本不一致就是新版本</div><div class="line">    return currentVersion != sandboxVersion;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Swift版本"><a href="#Swift版本" class="headerlink" title="Swift版本"></a>Swift版本</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line">     判断是否是新版本 </div><div class="line">     */</div><div class="line">    fileprivate func isNewVersion() -&gt; Bool &#123;</div><div class="line">        // 获取当前的版本号</div><div class="line">        let currentVersion = Bundle.main.infoDictionary?[&quot;CFBundleShortVersionString&quot;] as? String</div><div class="line">        </div><div class="line">        // 获取到之前的版本号</div><div class="line">        let sandboxVersionKey = &quot;sandboxVersionKey&quot;</div><div class="line">        let sandboxVersion = UserDefaults.standard.string(forKey: sandboxVersionKey)</div><div class="line">        </div><div class="line">        // 保存当前版本号</div><div class="line">        UserDefaults.standard.set(currentVersion, forKey: sandboxVersionKey)</div><div class="line">        UserDefaults.standard.synchronize()//立即保存</div><div class="line">        </div><div class="line">        // 当前版本和沙盒版本不一致就是新版本</div><div class="line">        return currentVersion != sandboxVersion</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
 
-          
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -192,17 +187,113 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://litten.me/2015/06/13/iOS判断版本号/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2015/11/10/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          AutoLayout小例子
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2015/04/08/UIView分类/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">浮动显示分类</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="iOS判断版本号" data-title="iOS判断版本号" data-url="//litten.me/2015/06/13/iOS判断版本号/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"qiongyong"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
 
-    
+
 
 
           </div>
@@ -225,8 +316,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
